@@ -1,101 +1,160 @@
-body {
-	font-family: Arial, Verdana, sans-serif;
-	background-color: AliceBlue;
-}
+<!DOCTYPE html>
+<html lang="en-US">
 
-h1 {
-	font-size: 2em;
-}
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="Robert Staskiewicz" />
+<meta name="description" content="UofT CSC 309 Bob's Computer Science website" />
+<meta name="keywords" content="HTML5, CSS3, CSC309, Web Programming, UofT" />
 
-aside, footer, nav, education, article, header{
-	border-style: solid;
-	margin: 10px;
-}
+<title>Programming with Bob</title>
+<!-- type CSS attribute not strictly required, but good for compatibility -->
+<link href="mystyle.css" type="text/css" rel="stylesheet" />
+<link href="plusplus.ico" type="MIME type" rel="shortcut icon" />
+</head>
+
+<body>
+
+<header id="home">
+<h1 id="mainTitle"> Bob's Website </h1>
+<p> <q>Now is the winter of our disconnect</q> </p>
+</header>
+
+<nav >
+	<a href="#home">Home</a><br />
+	<a href="#personal">Personal</a><br />
+	<a href="#education">Education</a><br />
+	<a href="#skills">Skills</a><br />
+	<a href="#courses">Courses</a><br />
+	<a href="#work">Work</a><br />
+</nav>
+
+<aside>
+  <address>
+    <h2 style="font-size: 125%; color:grey">Contact info: </h2>
+	<p style="font-size: 140%">E-mail:</p> <a href="mailto:bob.staskiewicz@mail.utoronto.ca">Robert Staskiewicz</a>.<br /> 
+	<p style="font-size: 140%">Visit me:</p>
+	<!--<p style="color: black; font-size: 125%">Bahen Centre, University of Toronto<br />
+	CAN </p>-->
+	<a href="https://plus.google.com/105549562800732860085/about">Bahen Centre, University of Toronto</a>
+	</address>
+	<p style="font-size: 140%">Projects:</p>
+	<a href="https://github.com/brusci">Github</a>
+	<a href="http://bobs-slog.blogspot.ca/">Bob's Blog</a>
+</aside>
+
+<article>
+
+<section id="personal"">
+<h2> Personal </h2>
+<ul>
+<li> Languages spoken
+	<ul type="square">
+	<li> English </li>
+	<li> Polish </li>
+	</ul>
+</li>
+<hr style="border-top: dotted 1px;" />
+<li> Hobbies</li>
+	<ul type="square">
+	<li> Reading </li>
+	<li> Videogames </li>
+	<li> Television </li>
+	<li> Food </li>
+	</ul>
+	<hr style="border-top: dotted 1px;" />
+<li> Interests</li>
+	<ul type="square">
+	<li> Mathematics </li>
+	<li> <abbr title="Human-Computer Interaction">HCI</abbr> </li>
+	<li> French & Spanish </li>
+	<li> Technology </li>
+	</ul>
+</ul>
+
+</section>
+<hr />
+<section id="education">
+<h2> Education </h2>
+<ul>
+<li> Dr. Bette Stephenson Center For Learning - 2012</li>
+<li> University of Toronto(CS Specialist + Math Major) - 2013-2017</li>
+<ul>
+
+</section>
+<hr />
+
+<section id="skills">
+<h2> Skills </h2>
+<h3> Programming languages: </h3>
+<ul>
+<li> Python</li>
+<li> Java</li>
+<li> C</li>
+<li> Turing</li>
+</ul>
+<hr style="border-top: dotted 1px;" />
+<h3> Internet Architectures: </h3>
+<ul>
+<li> HTML5</li>
+<li> CSS3</li>
+<li> Javascript</li>
+<li> NodeJS</li>
+<li> PostgreSQL</li>
+</ul>
+<hr style="border-top: dotted 1px;" />
+<h3> Programming Tools: </h3>
+<ul>
+<li> Eclipse</li>
+<li> VIM</li>
+<li> GDB</li>
+<li> Valgrind</li>
+<li> LaTeX</li>
+</ul>
 
 
-a {
-	font-size: 200%;
-	line-height: 100%;
-}
+</section>
 
-h2 {
-	font-family: "Times New Roman";
-	text-decoration: underline;
-}
+<hr />
+<section id="courses">
+<h2> Courses </h2>
+	<ul><h3> First Year</h3>
+	<li> CSC108 - Introduction to Computer Programming </li>
+	<li> CSC148 - Introduction to Computer Science </li>
+	<li> CSC165 - Mathematical Expression and Reasoning</li>
+	</ul>
+</li>
+<hr style="border-top: dotted 1px;" />
+	<ul><h3> Second Year</h3>
+	<li> CSC207 - Software Design</li>
+	<li> CSC209 - Software Tools and Systems Programming</li>
+	<li> CSC236 - Introduction to the Theory of Computation </li>
+	<li> CSC258 - Computer Organization </li>
+	<li> CSC263 - Data Structures and Analysis </li>
+	</ul>
+	<!-- inline style for dotted-horizonal-rule-->
+<hr style="border-top: dotted 1px;" />
+	<ul><h3> Third Year</h3>
+	<li> CSC309 - Programming on the Web</li>
+	<li> CSC343 - Introduction to Databases</li>
+	</ul>
+</section>
 
-header, footer{
-	text-align: center;
-}
+<hr />
+<section id="work">
+<h2> Work </h2>
+<ul>
+<li> Elections Canada - 2012</li>
+<li> Hollywoof Dog Grooming - 2011-2013</li>
+<ul>
+</section>
 
-footer, header{
-	border-radius: 25px;
-    background: #B4DCFF;
-}
-
-p, h1{
-    color: #ff6e00;
-}
-
-a:hover {
-    background-color: orange;
-}
-
-a {
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px 4px 0 0;
-}
+</article>
 
 
-@media screen and (min-width: 1240px) {
-aside, nav{
-	font-size: 0.8em;
-	max-width: 20%;
-	padding: 5px;
-	margin: 20px;
-}
+<footer> <!-- &#169 is © copyright symbol -->
+  <p>&#169; 2015 Robert Staskiewicz</p>
+</footer> 
 
-article {
-    max-width: 50%;
-}
-
-aside {
-	float: right;
-	width: 20%;
-}
-
-nav {
-	margin: 10px;
-	float: left;
-	width: 20%;
-}
-
-article {
-	padding: 10px;
-	margin-left: auto;
-    margin-right: auto;
-	width: 60%;
-}
-
-}
-
-@media screen and (max-width: 980px) {
-
-body, nav, aside, footer, header, article {
-	font-size: 125%;
-    background-color: SteelBlue;
-	width: 100%;
-    }
-	
-a {
-	font-size: 100%;
-	line-height: 100%;
-}
-
-nav {
-	text-align: center;
-}
-
-}
-	
+</body>
+</html>
